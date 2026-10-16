@@ -61,3 +61,38 @@ SegundoCorteV2/
                 └── um/
                     └── segundocortev2/
                         └── hello-view.fxml
+
+
+```markdown
+##  Características Principales y Funcionalidades (CRUD)
+El sistema implementa el ciclo completo de operaciones sobre la base de datos de manera segura:
+1. **Create (Crear):** Inserción mediante sentencias `PreparedStatement` para evitar inyección SQL y validar la unicidad del código.
+2. **Read (Leer):** Consulta general de registros ordenados ascendentemente, reflejados en tiempo real en un `TableView` de 6 columnas.
+3. **Update (Actualizar):** Modificación de atributos de un producto existente seleccionado, bloqueando automáticamente el campo ID.
+4. **Delete (Eliminar):** Eliminación con diálogo de confirmación previo y actualización inmediata en PostgreSQL y JavaFX.
+
+---
+
+## 🔍 Sistema de Búsquedas, Filtros y Sincronización
+- **Búsqueda por texto libre (`ILIKE`):** Coincidencia parcial por código o nombre sin distinción de mayúsculas/minúsculas.
+- **Filtro por Categoría:** Selección dinámica mediante ComboBox.
+- **Filtro de Existencias:** Casilla para aislar productos con stock activo (`stock > 0`).
+- **Contador Dinámico:** Etiqueta inferior que actualiza el número exacto de filas visibles.
+
+---
+
+## 🛡️ Validaciones y Manejo de Excepciones
+- **Validaciones de Entrada (V1 - V10):** Verificación previa a la persistencia para evitar cadenas vacías, longitudes inválidas, categorías nulas, precios con comas y stocks negativos.
+- **Control de Excepciones (E1 - E4):** Captura de excepciones SQL, violaciones de restricciones de integridad y registro de códigos `SQLState` en consola con alertas visuales.
+
+---
+
+##  Guía de Configuración y Ejecución
+1. **Base de Datos:** Cree una base de datos en PostgreSQL llamada `papeleria_campus`. Ejecute secuencialmente los scripts de `sql/` (`estructura.sql` y `datos.sql`).
+2. **Credenciales:** Duplique `config.example.properties`, renómbrelo a `config.properties` y configure su URL, usuario y contraseña locales.
+3. **Ejecución:** Abra el proyecto en IntelliJ IDEA como proyecto Maven y ejecute la clase `Launcher.java`.
+
+---
+
+## 📊 Matriz de Pruebas y Evidencias
+El comportamiento funcional y las capturas de pantalla operativas se encuentran documentadas en [pruebas.md](pruebas.md) y respaldadas en la carpeta [evidencias/](evidencias/).
