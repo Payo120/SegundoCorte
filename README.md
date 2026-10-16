@@ -10,9 +10,6 @@ Aplicación de escritorio desarrollada en Java 21 y JavaFX 21 que gestiona de fo
 3. [Esquema de Base de Datos y Restricciones SQL](#-esquema-de-base-de-datos-y-restricciones-sql)
 4. [Características Principales y Funcionalidades (CRUD)](#-características-principales-y-funcionalidades-crud)
 5. [Sistema de Búsquedas, Filtros y Sincronización](#-sistema-de-búsquedas-filtros-y-sincronización)
-6. [Validaciones y Manejo de Excepciones](#-validaciones-y-manejo-de-excepciones)
-7. [Guía de Configuración y Ejecución](#-guía-de-configuración-y-ejecución)
-8. [Matriz de Pruebas y Evidencias](#-matriz-de-pruebas-y-evidencias)
 
 ---
 
