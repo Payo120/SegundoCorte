@@ -3,7 +3,8 @@
 ## 1. Listado Inicial y Carga desde PostgreSQL
 La aplicación establece conexión real con PostgreSQL mediante JDBC y carga correctamente los 12 registros obligatorios en el TableView, mostrando las 6 columnas solicitadas y el contador de registros en la interfaz gráfica.
 
-![Listado Inicial de Productos](evidencias/listado_inicial.png)
+<img width="1049" height="650" alt="Captura de pantalla 2026-10-16 083929" src="https://github.com/user-attachments/assets/d5291499-7c99-4a89-b4d5-dfca24119000" />
+
 
 ---
 
